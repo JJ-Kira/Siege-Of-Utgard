@@ -5,8 +5,140 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01e040a-22c0-446a-b1d6-ebaf655e567f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Crawler/Demo/Night.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Crawler/Demo/Night.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Creep/DemoSceneAssets/DemoScenePlaneMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Creep/DemoSceneAssets/DemoScenePlaneMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Creep/Materials/Creep1_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Creep/Materials/Creep1_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Creep/Materials/Creep2_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Creep/Materials/Creep2_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Creep/Materials/Creep3_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Creep/Materials/Creep3_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Ghoul/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Ghoul/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Animation/Materials/Titan__Albedo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Animation/Materials/Titan__Albedo.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Materials/Titan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Materials/Titan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Stand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Stand.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Plane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Zombie.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Zombie.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_BrickHouse1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_BrickHouse1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Bridge1_LOD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Bridge1_LOD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Cabins.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Cabins.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Church1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Church1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Doors1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Doors1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_IndBuilding1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_IndBuilding1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_IndBuilding1_LOD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_IndBuilding1_LOD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Rubble1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Rubble1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures1_LOD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures1_LOD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures2_LOD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Structures2_LOD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Villa1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Villa1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Villa2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_Villa2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_WindowGlass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/BLD_WindowGlass1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/HLP_BlockerCube.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/HLP_BlockerCube.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/HLP_Grid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/HLP_Grid.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/MSC_HumanScale.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/MSC_HumanScale.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/NAT_Grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/NAT_Grass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/NAT_GroundMoss.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/NAT_GroundMoss.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Beds1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Beds1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Boat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Boat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Boat1_LOD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Boat1_LOD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Cabinets1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Cabinets1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_FlyingSaucer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_FlyingSaucer.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Gravestones1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_Gravestones1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_ParkBench1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_ParkBench1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_RugsPaintings.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_RugsPaintings.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_SmallProps1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_SmallProps1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_SmallProps2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Materials/PROP_SmallProps2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Trees/SrcMeshes/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Content/Trees/SrcMeshes/Materials/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/PostProcessing/Utilities/CustomMotionTexture/Materials/UVChecker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/PostProcessing/Utilities/CustomMotionTexture/Materials/UVChecker.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Scenes/Scene_A.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Flooded_Grounds/Scenes/Scene_A.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Antlers.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Antlers.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Antlers_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Antlers_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Antlers_Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Antlers_Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Axe.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Axe.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Bed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Bed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/BeerCan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/BeerCan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Carpet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Carpet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Chair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Chair.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Chest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Chest.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Door_Frame.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Door_Frame.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Door_Front.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Door_Front.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Door_Window.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Door_Window.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fence.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fence.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fridge_Case.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fridge_Case.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fridge_DoorD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fridge_DoorD.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fridge_DoorH.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Fridge_DoorH.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Furnance.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Furnance.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Gas_Can.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Gas_Can.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Generator.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Generator.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Gun.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Gun.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Interier_Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Interier_Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/KitchenShelf.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/KitchenShelf.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Light.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Light.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/MirrorShelf_Case.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/MirrorShelf_Case.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/MirrorShelf_Door.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/MirrorShelf_Door.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Outside_Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Outside_Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Painting.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Painting.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Pillier.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Pillier.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Roof.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Roof.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Shower.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Shower.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Sink.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Sink.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/SmallTable.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/SmallTable.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Sofa.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Sofa.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Sofa_Pilow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Sofa_Pilow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Suspension.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Suspension.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/TableTelevision.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/TableTelevision.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Table_Kitchen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Table_Kitchen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Tap.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Tap.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Television.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Television.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Toilet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Toilet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Towels.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Towels.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Wardrobe_Door.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Wardrobe_Door.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Wardrobe_Main.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Wardrobe_Main.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Washing_Machine.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Washing_Machine.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Window.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Window.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Materials/Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Show.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Show.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Show_Assets.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Wasteland Cabin/Show_Assets.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/BigHands/Materials/BigGlovesLogoMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/BigHands/Materials/BigGlovesLogoMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/BigHands/Materials/BigGlovesTechnicalMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/BigHands/Materials/BigGlovesTechnicalMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/HandConnectionRays/RaysBaseMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/HandConnectionRays/RaysBaseMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgArmMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgArmMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgBodyMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgBodyMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgGloveMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgGloveMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgHelmetCoverMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgHelmetCoverMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgHelmetInteriorMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgHelmetInteriorMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgHelmetMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/Cyborg/Materials/CyborgHelmetMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/SmallHands/Materials/SmallGlovesLogoMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/SmallHands/Materials/SmallGlovesLogoMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/SmallHands/Materials/SmallGlovesTechnicalMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Avatars/SmallHands/Materials/SmallGlovesTechnicalMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Cyber/Materials/CyberTargetMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Cyber/Materials/CyberTargetMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Round/Materials/RoundMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Round/Materials/RoundMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Stylish/Materials/StylishArrowMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Stylish/Materials/StylishArrowMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Stylish/Materials/StylishTargetColoredMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Stylish/Materials/StylishTargetColoredMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Stylish/Materials/StylishTargetMat_BRP_PBR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Art/Teleport/Targets/Stylish/Materials/StylishTargetMat_BRP_PBR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Lab/LaserSmoke.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Lab/LaserSmoke.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/ControllersRoom.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/ControllersRoom.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/FiringZone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/FiringZone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/Laboratory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/Laboratory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/ShootingRange.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/Rooms/ShootingRange.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/ShootingRange/Weapons/Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/ShootingRange/Weapons/Gun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/ShootingRange/Weapons/Machinegun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/ShootingRange/Weapons/Machinegun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/ShootingRange/Weapons/Shotgun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/Prefabs/ShootingRange/Weapons/Shotgun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/UltimateXR_URP.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/FullScene/UltimateXR_URP.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Examples/Input/InputVR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Examples/Input/InputVR.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/Teleport/Targets/TeleportTargetCyber02_BRP_PBR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/Teleport/Targets/TeleportTargetCyber02_BRP_PBR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/Teleport/Targets/TeleportTargetCyber02_URP_PBR.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/Teleport/Targets/TeleportTargetCyber02_URP_PBR.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugController1D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugController1D.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugController2D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugController2D.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugControllerButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugControllerButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugInputPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/DebugInput/DebugInputPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresEntry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresEntry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresKey.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresKey.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresPanelEnterName.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresPanelEnterName.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresPanelEntries.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Hiscores/HiscoresPanelEntries.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Keyboard/Key.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Keyboard/Key.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Keyboard/Keyboard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltimateXR/Prefabs/UI/Keyboard/Keyboard.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +157,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -87,6 +219,7 @@
       <workItem from="1727289002196" duration="25000" />
       <workItem from="1727290139480" duration="27000" />
       <workItem from="1727290326387" duration="6018000" />
+      <workItem from="1727796103427" duration="14000" />
     </task>
     <servers />
   </component>
