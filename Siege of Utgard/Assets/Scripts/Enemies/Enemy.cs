@@ -1,70 +1,64 @@
 using UnityEngine;
 using UnityEngine.AI;
+using Game;
 
-public abstract class Enemy : MonoBehaviour
-{
-    [Header("Enemy Stats")]
-    public int MaxHealth = 50;
-    protected int currentHealth;
+namespace Enemies {
+    [RequireComponent(typeof(NavMeshAgent))]
+    public abstract class Enemy : MonoBehaviour {
+        [Header("Enemy Stats")] public int MaxHealth = 50;
+        protected int currentHealth;
 
-    public int AttackPower = 10;
-    public float speed = 3.5f;
+        public int AttackPower = 10;
+        public float speed = 3.5f;
 
-    [Header("Pathfinding")]
-    protected NavMeshAgent agent;
-    public Transform Target; // Typically, the player's base or a specific point
+        [Header("Pathfinding")] protected NavMeshAgent agent;
+        private Transform target; // Typically, the player's base or a specific point
 
-    protected virtual void Awake()
-    {
-        agent = GetComponent<NavMeshAgent>();
-    }
-
-    protected virtual void Start()
-    {
-        currentHealth = MaxHealth;
-        if (Target == null)
-        {
-            Target = GameObject.FindWithTag("EnemyTarget").transform;
+        protected virtual void Awake() {
+            agent = GetComponent<NavMeshAgent>();
         }
-        SetDestination();
-        SetDestination();
-    }
 
-    protected virtual void Update()
-    {
-        // You can add common behaviors here
-    }
-
-    public void TakeDamage(int amount)
-    {
-        currentHealth -= amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
-        // Add UI update or death logic here
-        if (currentHealth <= 0)
-        {
-            Die();
+        protected virtual void Start() {
+            currentHealth = MaxHealth;
+            SetDestination();
         }
-    }
 
-    protected virtual void Die()
-    {
-        WaveManager waveManager = FindObjectOfType<WaveManager>();
-        if (waveManager != null)
-        {
-            waveManager.OnEnemyDestroyed();
+        protected virtual void Update() {
+            // Add common behaviors here
         }
-        Debug.Log($"{gameObject.name} has died!");
-        Destroy(gameObject);
-    }
 
-    protected void SetDestination()
-    {
-        if (Target != null)
-        {
-            agent.SetDestination(Target.position);
+        public void TakeDamage(int amount) {
+            currentHealth -= amount;
+            currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
+            // Add UI update/death logic here
+            if (currentHealth <= 0) {
+                Die();
+            }
         }
-    }
 
-    // Abstract method for enemy-specific behavior
-    public abstract void PerformAttack();
+        protected virtual void Die() {
+            WaveManager waveManager = FindObjectOfType<WaveManager>();
+            if (waveManager != null) {
+                waveManager.OnEnemyDestroyed();
+            }
+
+            Debug.Log($"{gameObject.name} has died!");
+            Destroy(gameObject);
+        }
+
+        // Method to set the target dynamically when instantiating the enemy
+        public void SetTarget(Transform newTarget) {
+            target = newTarget;
+            SetDestination();
+        }
+
+        protected void SetDestination() {
+            if (target != null) {
+                agent.SetDestination(target.position);
+            }
+        }
+
+        // Abstract method for enemy-specific behavior
+        public abstract void PerformAttack();
+    }
 }

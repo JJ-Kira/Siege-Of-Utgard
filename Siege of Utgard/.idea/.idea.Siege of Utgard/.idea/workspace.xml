@@ -5,179 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e01e040a-22c0-446a-b1d6-ebaf655e567f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Game.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Camera.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Camera.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Crane.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Crane.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Crane.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Crane.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Main Camera.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Main Camera.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Plane (1).controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Plane (1).controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Plane.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Animation/Plane.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Base.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Base.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Crane.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Crane.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Environment.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Environment.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Monster truck.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Monster truck.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Rocks.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Rocks.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation/Grass.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation/Grass.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation/Tree.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation/Tree.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation/Tree_2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Materials/Vegetation/Tree_2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Barrel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Barrel.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Box.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Box.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Crane.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Crane.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Environment.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Environment.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Monster truck.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Monster truck.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Plane.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Plane.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks_1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks_1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks_3.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Rocks_3.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Skull.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Skull.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation/Grass.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation/Grass.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation/Tree.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation/Tree.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation/Tree_2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Vegetation/Tree_2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Water_tower.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Models/Water_tower.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Barrel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Barrel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Box.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Box.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Crane.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Crane.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Environment.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Environment.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Grass.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Grass.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Monster truck.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Monster truck.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Plane.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Plane.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Rocks_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Tree 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Tree 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Tree_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Tree_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Water_tower.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Prefabs/Water_tower.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes/Post-Processing Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes/Post-Processing Profile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes/Showcase.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes/Showcase.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes/ShowcaseSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Scenes/ShowcaseSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Script.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Script/SimpleCameraController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Script/SimpleCameraController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_AO.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_AO.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_AlbedoTransparency.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_AlbedoTransparency.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_MetallicSmoothness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_MetallicSmoothness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_Normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_Normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_Roughness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Crane/Crane_Roughness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_AO.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_AO.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_AlbedoTransparency.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_AlbedoTransparency.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_MetallicSmoothness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_MetallicSmoothness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_Normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_Normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_Roughness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Environment/Environment_Roughness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_AO.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_AO.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_AlbedoTransparency.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_AlbedoTransparency.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_MetallicSmoothness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_MetallicSmoothness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_Normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_Normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_Roughness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Monster truck/Monster truck_Roughness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_AO.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_AO.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_AlbedoTransparency.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_AlbedoTransparency.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_MetallicSmoothness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_MetallicSmoothness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_Normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_Normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_Roughness.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Rocks/Rocks_Roughness.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree/Dead_Tree_Bark1-diff.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree/Dead_Tree_Bark1-diff.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree/Dead_Tree_StrippedGrey-diff.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree/Dead_Tree_StrippedGrey-diff.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree/Dead_Tree_StrippedGrey-norm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/Tree/Dead_Tree_StrippedGrey-norm.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/cbfni-0lz5b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/Textures/Vegetation/cbfni-0lz5b.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/Dist_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/Dist_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/Dust.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/Dust.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/DustBig.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/DustBig.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/Dust_mtl.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR/VFX/Dust_mtl.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Defender.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Defender.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DevicePerformanceAndAuthorizationController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DevicePerformanceAndAuthorizationController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SiegeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SiegeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Defender.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VR/DevicePerformanceAndAuthorizationController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -260,7 +116,7 @@
       <workItem from="1727290139480" duration="27000" />
       <workItem from="1727290326387" duration="6018000" />
       <workItem from="1727796103427" duration="14000" />
-      <workItem from="1727816666496" duration="2134000" />
+      <workItem from="1727816666496" duration="6639000" />
     </task>
     <servers />
   </component>
