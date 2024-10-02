@@ -3,7 +3,7 @@ using Game;
 
 namespace Enemies {
     public class Titan : Enemy {
-        [Header("Basic Enemy Specifics")] public float AttackRange = 1.5f;
+        [Header("Basic Enemy Specifics")] 
         public float AttackCooldown = 2f;
         private float lastAttackTime;
 
@@ -13,7 +13,10 @@ namespace Enemies {
         }
 
         protected override void Update() {
-            base.Update();
+            if (playerTarget)
+            {
+                agent.SetDestination(playerTarget.position);
+            }
             HandleMovementAndAttack();
         }
 

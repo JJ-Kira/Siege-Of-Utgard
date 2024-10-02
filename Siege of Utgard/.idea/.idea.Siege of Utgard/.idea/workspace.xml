@@ -6,26 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e01e040a-22c0-446a-b1d6-ebaf655e567f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Animation/Materials/Titan__Albedo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Animation/Materials/Titan__Albedo.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Materials/Titan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Materials/Titan.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Mesh/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Mesh/Materials/Titan__Albedo.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Mesh/Materials/Titan__Albedo.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Cylinder001Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Cylinder001Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Stand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Stand.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/TitanSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/TitanSettings.lighting.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Defender.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Defender.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DevicePerformanceAndAuthorizationController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DevicePerformanceAndAuthorizationController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SiegeManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SiegeManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +31,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Defender.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Defender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VR/DevicePerformanceAndAuthorizationController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -62,7 +57,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "settings.editor.selected.configurable": "preferences.environmentSetup",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -116,7 +111,8 @@
       <workItem from="1727290139480" duration="27000" />
       <workItem from="1727290326387" duration="6018000" />
       <workItem from="1727796103427" duration="14000" />
-      <workItem from="1727816666496" duration="6639000" />
+      <workItem from="1727816666496" duration="9204000" />
+      <workItem from="1727899020262" duration="3664000" />
     </task>
     <servers />
   </component>
