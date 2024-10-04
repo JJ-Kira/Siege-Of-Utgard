@@ -4,7 +4,7 @@ using Game;
 using UnityStandardAssets.Characters.ThirdPerson;
 
 namespace Enemies {
-    [RequireComponent(typeof(NavMeshAgent), typeof(ThirdPersonCharacter))]
+    [RequireComponent(typeof(NavMeshAgent))]
     public abstract class Enemy : MonoBehaviour {
         [Header("Enemy Stats")] 
         public int MaxHealth = 50;
@@ -24,20 +24,20 @@ namespace Enemies {
         
         protected virtual void Awake() {
             agent = GetComponent<NavMeshAgent>();
-            character = GetComponent<ThirdPersonCharacter>();
+            //character = GetComponent<ThirdPersonCharacter>();
         }
 
         protected virtual void Start() {
             currentHealth = MaxHealth;
-            agent.updateRotation = false;
+            //animator.updateRotation = false;
         }
 
         protected virtual void Update()
         {
-            if (agent.remainingDistance > agent.stoppingDistance)
-                character.Move(agent.desiredVelocity, false, false);
-            else
-                character.Move(Vector3.zero, false, false);
+            //if (agent.remainingDistance > agent.stoppingDistance)
+            //    character.Move(agent.desiredVelocity, false, false);
+            //else
+            //     character.Move(Vector3.zero, false, false);
             
             // Check if the player is within detection range
             float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);

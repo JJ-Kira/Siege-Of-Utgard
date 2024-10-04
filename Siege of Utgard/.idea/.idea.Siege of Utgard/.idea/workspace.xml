@@ -6,21 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e01e040a-22c0-446a-b1d6-ebaf655e567f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Animation/Materials/Titan__Albedo.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Animation/Materials/Titan__Albedo.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Materials/Titan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Materials/Titan.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Mesh/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Mesh/Materials/Titan__Albedo.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Mesh/Materials/Titan__Albedo.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Cylinder001Mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Cylinder001Mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Stand.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Stand/Mesh/Materials/Stand.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/Titan.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Titan/TitanSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Titan/TitanSettings.lighting.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard/NavMesh-NavMesh.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Standard Assets/Animations/Humanoid/Humanoid.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Animations/Humanoid/Humanoid.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.environmentSetup",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -112,7 +102,8 @@
       <workItem from="1727290326387" duration="6018000" />
       <workItem from="1727796103427" duration="14000" />
       <workItem from="1727816666496" duration="9204000" />
-      <workItem from="1727899020262" duration="3664000" />
+      <workItem from="1727899020262" duration="4278000" />
+      <workItem from="1727985054007" duration="3466000" />
     </task>
     <servers />
   </component>
