@@ -1,22 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
 {
     public float MaxHealth = 100;
-    private float currentHealth;
+    [Serialize] protected float currentHealth;
     
     protected virtual void Start() {
         currentHealth = MaxHealth;
     }
     
-    public void TakeDamage(float amount) {
+    public virtual void TakeDamage(float amount) {
         currentHealth -= amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
         if (currentHealth <= 0) {
             Die();
         }
+        currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
     }
 
     public void Heal(float amount) {

@@ -3,6 +3,7 @@ using Game;
 
 namespace Entities.Enemies {
     public class Zombie : Enemy {
+        private static readonly int Attack = Animator.StringToHash("Attack");
         private bool chasingPlayer = false; // Track whether the enemy is chasing the player
         private void Update() {
             // Check if the player is within detection range
@@ -21,11 +22,9 @@ namespace Entities.Enemies {
                 {
                     PerformAttack();
                     StartCoroutine(AttackCoroutine());
-                    Debug.LogWarning("Attacking player");
                 }
                 else {
                     ResumeMovement();
-                    Debug.LogWarning("Resuming movement");
                 }
             }
             else {
@@ -34,21 +33,18 @@ namespace Entities.Enemies {
                     ResumeMovement();
                     chasingPlayer = false;
                     SetDestination(castleTarget); // Return to the castle path
-                    Debug.LogWarning("Returning to storming the castle");
                 }
                 if (castleTarget) {
                     agent.SetDestination(castleTarget.position);
-                    Debug.LogWarning("Storming the csatle");
                 }
             }
         }
 
         public override void PerformAttack() {
-            // Implement attack logic, e.g., reduce player health
-            //animator.SetBool("Attack", true);
             agent.isStopped = true; // Stop movement to attack
             transform.LookAt(chasingPlayer ? playerTarget : door);
-            animator.SetTrigger("AttackNow");
+            animator.SetTrigger(Attack);
+            Defender.Instance.TakeDamage(AttackPower);
             string target = chasingPlayer ? "player" : "cabin";
             Debug.Log($"{gameObject.name} attacks the {target} for {AttackPower} damage!");
             Defender.Instance.TakeDamage(AttackPower);

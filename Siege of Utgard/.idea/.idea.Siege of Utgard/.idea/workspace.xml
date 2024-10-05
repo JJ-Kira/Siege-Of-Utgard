@@ -6,53 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e01e040a-22c0-446a-b1d6-ebaf655e567f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Enemy Animations/TitanAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Enemy Animations/TitanAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Attack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Attack.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Attack.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_FallingBack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_FallingBack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_FallingBack.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_FallingBack.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_FallingForward.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_FallingForward.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Run.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Run.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Run_InPlace.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Run_InPlace.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk1.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk1.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk1_InPlace.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk1_InPlace.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk_InPlace.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk_InPlace.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk_InPlace.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Z_Walk_InPlace.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Zombie.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Animations/Zombie.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Plane.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Zombie.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Zombie/Materials/Zombie.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/ScenePrefabs.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Zombie/ScenePrefabs.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs/Titan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs/Titan.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard/NavMesh-NavMesh 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard/NavMesh-NavMesh 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard/NavMesh-NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ThirdPersonCharacter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/ThirdPersonCharacter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Defender.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Defender.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Enemy Animations/ZombieAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Enemy Animations/ZombieAnimation.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Defender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Defender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemies/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemies/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Titan.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/WaveManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Defender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Castle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VR/DevicePerformanceAndAuthorizationController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -146,7 +100,7 @@
       <workItem from="1727816666496" duration="9204000" />
       <workItem from="1727899020262" duration="4278000" />
       <workItem from="1727985054007" duration="9995000" />
-      <workItem from="1728128187327" duration="12671000" />
+      <workItem from="1728128187327" duration="18921000" />
     </task>
     <servers />
   </component>
