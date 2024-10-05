@@ -1,14 +1,11 @@
 using UnityEngine;
 
 namespace Game {
-    public class Defender : MonoBehaviour {
+    public class Defender : Entity {
         // Singleton instance for easy access
         public static Defender Instance { get; private set; }
 
-        [Header("Player Stats")] public int MaxHealth = 100;
-        private int currentHealth;
-
-        [Header("Resources")] public int StartingResources = 100;
+        public int StartingResources = 100;
         private int currentResources;
 
         private void Awake() {
@@ -22,37 +19,12 @@ namespace Game {
             }
         }
 
-        private void Start() {
-            currentHealth = MaxHealth;
+        protected override void Start()
+        {
+            base.Start();
             currentResources = StartingResources;
         }
-
-        #region Health Management
-
-        public void TakeDamage(int amount) {
-            currentHealth -= amount;
-            currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
-            // Add UI update or death logic here
-            if (currentHealth <= 0) {
-                Die();
-            }
-        }
-
-        public void Heal(int amount) {
-            currentHealth += amount;
-            currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
-            // Add UI update here
-        }
-
-        private void Die() {
-            // Handle player death (e.g., game over screen)
-            Debug.Log("Player has died!");
-        }
-
-        #endregion
-
-        #region Resource Management
-
+        
         public bool SpendResources(int amount) {
             if (currentResources >= amount) {
                 currentResources -= amount;
@@ -72,6 +44,9 @@ namespace Game {
             return currentResources;
         }
 
-        #endregion
+        protected override void Die()
+        {
+            base.Die();
+        }
     }
 }

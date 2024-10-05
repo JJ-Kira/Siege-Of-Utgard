@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Enemies {
+namespace Enemies.Control {
     [RequireComponent(typeof(NavMeshAgent), typeof(Animator))]
     public class EnemyMovement : MonoBehaviour {
+        private static readonly int Move = Animator.StringToHash("Move");
+        private static readonly int Velocity = Animator.StringToHash("Velocity");
         private NavMeshAgent agent;
         private Animator animator;
 
@@ -47,17 +49,15 @@ namespace Enemies {
                 velocity = Vector2.Lerp(Vector2.zero, velocity, agent.remainingDistance);
             }
 
-            bool shouldMove = velocity.magnitude > 0.5f && agent.remainingDistance > agent.stoppingDistance;
+            bool shouldMove = velocity.magnitude > 0.3f && agent.remainingDistance > agent.stoppingDistance;
 
-            animator.SetBool("Move", shouldMove);
-            animator.SetFloat("VelocityX", velocity.x);
-            animator.SetFloat("VelocityY", velocity.y);
+            animator.SetBool(Move, shouldMove);
+            animator.SetFloat(Velocity, velocity.magnitude);
 
-            //float deltaMagnitude = worldDeltaPosition.magnitude;
-            //if (deltaMagnitude > Agent.radius / 2)
-            //{
-            //    transform.position = Vector3.Lerp(Animator.rootPosition, Agent.nextPosition, smooth);
-            //}
+            float deltaMagnitude = worldDeltaPosition.magnitude;
+            if (deltaMagnitude > agent.radius / 2) {
+                transform.position = Vector3.Lerp(animator.rootPosition, agent.nextPosition, smooth);
+            }
         }
 
         public void StopMoving() {

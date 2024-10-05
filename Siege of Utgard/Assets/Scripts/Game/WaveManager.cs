@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using Enemies;
 
 namespace Game {
     [System.Serializable]

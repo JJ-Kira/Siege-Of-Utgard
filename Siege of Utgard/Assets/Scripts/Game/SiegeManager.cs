@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Game {
     public class SiegeManager : MonoBehaviour {
-        [HideInInspector] public static SiegeManager Instance { get; private set; }
+        public static SiegeManager Instance { get; private set; }
 
         [Header("Wave Settings")]
         public WaveManager WaveManager;
