@@ -5,9 +5,12 @@ using UnityEngine;
 namespace Game {
     public class Defender : Entity {
         public static Defender Instance { get; private set; }
+
+        private float experience;
+        private float currentExperience = 0f;
         
-        private float experience = 0f;
-        
+        [HideInInspector] public float Experience => experience;
+
         //buffs
         private float damageDone = 1f;
         private float experienceBuff = 0f;
@@ -51,8 +54,8 @@ namespace Game {
         #region Experience
         
         public bool SpendExperience(float amount) {
-            if (experience >= amount) {
-                experience -= amount;
+            if (currentExperience >= amount) {
+                currentExperience -= amount;
                 // Update UI
                 return true;
             }
@@ -60,6 +63,7 @@ namespace Game {
         }
         
         public void GainExperience(float amount) {
+            currentExperience += amount * experienceBuff;
             experience += amount * experienceBuff;
             // Update UI
         }

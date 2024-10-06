@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e01e040a-22c0-446a-b1d6-ebaf655e567f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Siege of Utgard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Enemy Animations/ZombieAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Enemy Animations/ZombieAnimation.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs/Titan.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs/Titan.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs/Zombie.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/EnemyPrefabs/Zombie.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Utgard.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Defender.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Defender.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemies/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemies/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemies/Zombie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/SiegeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +108,7 @@
       <workItem from="1727816666496" duration="9204000" />
       <workItem from="1727899020262" duration="4278000" />
       <workItem from="1727985054007" duration="9995000" />
-      <workItem from="1728128187327" duration="18921000" />
+      <workItem from="1728128187327" duration="31564000" />
     </task>
     <servers />
   </component>

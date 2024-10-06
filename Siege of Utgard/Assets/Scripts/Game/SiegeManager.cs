@@ -1,41 +1,51 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game {
-    public class SiegeManager : MonoBehaviour {
+    public class SiegeManager : MonoBehaviour
+    {
         public static SiegeManager Instance { get; private set; }
 
-        [Header("Wave Settings")]
         public WaveManager WaveManager;
+        [Min(0)] public int Waves;
+        [SerializeField] private float[] wavesExperienceParameters;
+        [SerializeField] private int[] wavesEnemyCountParameters;
 
-        [Header("Game State")]
-        public bool IsGameOver = false;
-
-        private void Awake() {
-            // Implement Singleton pattern
-            if (Instance == null) {
+        private void Awake()
+        {
+            if (Instance == null)
                 Instance = this;
-                // Optionally, use DontDestroyOnLoad if needed
-            }
-            else {
+            else
                 Destroy(gameObject);
+        }
+
+        private void Start()
+        {
+            if (WaveManager != null)
+            {
+                WaveManager.StartWave(wavesExperienceParameters[0], wavesEnemyCountParameters[0]);
             }
         }
 
-        private void Start() {
-            if (WaveManager != null) {
-                WaveManager.StartWave();
-            }
-        }
-
-        public void GameOver() {
-            IsGameOver = true;
+        public void GameOver()
+        {
             // Handle game over logic (e.g., display UI, stop wave spawning)
             Debug.Log("Game Over!");
         }
 
-        public void Victory() {
+        public void Victory()
+        {
             // Handle victory logic (e.g., display UI, stop wave spawning)
             Debug.Log("You Win!");
+        }
+
+        void OnValidate()
+        {
+            if (wavesExperienceParameters == null || wavesExperienceParameters.Length == 0)
+                Array.Resize(ref wavesExperienceParameters, Waves);
+            if (wavesEnemyCountParameters == null || wavesEnemyCountParameters.Length == 0)
+                Array.Resize(ref wavesEnemyCountParameters, Waves);
         }
     }
 }

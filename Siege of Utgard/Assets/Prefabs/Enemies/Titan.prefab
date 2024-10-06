@@ -267,10 +267,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100082, guid: 24c4300f68c986241af51004b72b03f2,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2394059148897705554}
-    - targetCorrespondingSourceObject: {fileID: 100082, guid: 24c4300f68c986241af51004b72b03f2,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6201153764031448155}
   m_SourcePrefab: {fileID: 100100000, guid: 24c4300f68c986241af51004b72b03f2, type: 3}
 --- !u!1 &6423449797248341083 stripped
@@ -313,13 +309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32728902f1fc5ea4d85310592b4fa07a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 50
-  AttackPower: 10
+  MaxHealth: 90
+  AttackPower: 2
+  ExperienceValue: 10
   DetectionRange: 10
-  AttackRange: 2.1
-  castleTarget: {fileID: 0}
-  playerTarget: {fileID: 0}
-  AttackCooldown: 2
 --- !u!54 &3649108597599100180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -370,26 +363,6 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.19, z: 0}
---- !u!114 &2394059148897705554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6423449797248341083}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16942607c0527664a9d29d0546bc36ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MovingTurnSpeed: 360
-  m_StationaryTurnSpeed: 180
-  m_JumpPower: 6
-  m_GravityMultiplier: 2
-  m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 1
-  m_AnimSpeedMultiplier: 1
-  m_GroundCheckDistance: 0.2
 --- !u!114 &6201153764031448155
 MonoBehaviour:
   m_ObjectHideFlags: 0

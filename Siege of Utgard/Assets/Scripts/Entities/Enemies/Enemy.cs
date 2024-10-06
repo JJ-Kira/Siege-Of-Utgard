@@ -11,25 +11,29 @@ namespace Entities.Enemies {
         [Header("Enemy Stats")] 
         protected float AttackCooldown = 2f;
         public float AttackPower = 10;
+        public float ExperienceValue;
 
         [Header("Pathfinding")] 
         public float DetectionRange = 5f; // Range within which enemies detect the player
         protected float attackRange; // Range within which enemies attack the player
         
         protected NavMeshAgent agent;
-        public Transform castleTarget, playerTarget, door;
+        protected Transform castleTarget, playerTarget, door;
 
         protected Animator animator;
         protected bool canAttack = true;
+        protected bool isAttacking = false;
+        
         protected virtual void Awake() {
-            agent = GetComponent<NavMeshAgent>(); //TODO: Handle both by WaveManager
+            agent = GetComponent<NavMeshAgent>();
             animator = GetComponent<Animator>();
 
-            attackRange = agent.stoppingDistance + 0.5f;
+            attackRange = agent.stoppingDistance;
         }
 
         protected override void Die() {
             base.Die();
+            Defender.Instance.GainExperience(ExperienceValue);
             WaveManager waveManager = FindObjectOfType<WaveManager>();
             if (waveManager) {
                 waveManager.OnEnemyDestroyed();
@@ -44,7 +48,7 @@ namespace Entities.Enemies {
             playerTarget = defender;
             castleTarget = castle;
             this.door = door;
-            SetDestination(stormCastle ? castle : defender);
+            //SetDestination(stormCastle ? castleTarget : playerTarget);
         }
 
         protected void SetDestination(Transform newTarget) {
@@ -59,6 +63,11 @@ namespace Entities.Enemies {
         // Method to resume movement after an attack (if needed)
         protected void ResumeMovement() {
             agent.isStopped = false;
+            if (isAttacking)
+            {
+                isAttacking = false;
+                StopAllCoroutines();
+            }
         }
         
         // Coroutine to handle attack logic with cooldown

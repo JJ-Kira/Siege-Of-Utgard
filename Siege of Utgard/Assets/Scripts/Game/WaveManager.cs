@@ -1,76 +1,113 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using Entities.Enemies;
+using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Game {
     [System.Serializable]
-    public class Wave {
-        public int EnemyCount;
-        public float SpawnInterval;
 
-        public GameObject EnemyPrefab;
-        // Add more properties like enemy types, special enemies, etc.
-    }
+    public class WaveManager : MonoBehaviour
+    {
+        [Header("Targets")] 
+        [SerializeField] private Transform player;
+        [SerializeField] private Transform cabin;
+        [SerializeField] private Transform target;
 
-    public class WaveManager : MonoBehaviour {
-        public Wave[] Waves;
-        private int currentWaveIndex = 0;
-        private bool isSpawning = false;
-
-        [Header("Spawn Points")] public Transform[] SpawnPoints;
-
-        [Header("Game Over Conditions")] public int EnemiesRemaining = 0;
-
-        private void Update() {
-            if (isSpawning && EnemiesRemaining <= 0)
-                StartNextWave();
+        [Header("Spawning")] 
+        public float MaxSpawnDistance;
+        public float MinSpawnDistance;
+        public GameObject[] EnemyPrefabs;
+        public float[] EnemyExperience;
+        
+        private float maxExperience;
+        private int maxEnemies;
+        private List<int> waveEnemies = new();
+        private int enemyDeathCount = 0;
+        
+        public void StartWave(float experience, int enemies) {
+            // reset the manager
+            if (waveEnemies != null && waveEnemies.Count != 0) {
+                waveEnemies.Clear();
+                enemyDeathCount = 0;
+            }
+            maxExperience = experience;
+            maxEnemies = enemies;
+                
+            PrepareWave();
+            StartCoroutine(SpawnWave());
         }
 
-        public void StartWave() {
-            if (currentWaveIndex < Waves.Length) {
-                StartCoroutine(SpawnWave(Waves[currentWaveIndex]));
-                isSpawning = true;
+        private void PrepareWave()
+        {
+            List<float> weights = new List<float>();
+            foreach (var enemyExp in EnemyExperience) {
+                float weight = 1f / enemyExp; // inverse weighing
+                weights.Add(weight);
             }
-            else {
-                SiegeManager.Instance.Victory();
+            
+            float totalExperience = 0f;
+            for (int i = 0; i < maxEnemies; i++) {
+                // weighted random selection
+                int selectedEnemy = SelectEnemyBasedOnExperience(weights);
+                float selectedEnemyExperience = EnemyExperience[selectedEnemy];
+                if (totalExperience + selectedEnemyExperience > maxExperience)
+                    break;
+                waveEnemies.Add(selectedEnemy);
+                totalExperience += selectedEnemyExperience;
+            }
+            
+        }
+
+        private int SelectEnemyBasedOnExperience(List<float> weights) {
+            float totalWeight = 0f;
+            foreach (var weight in weights) {
+                totalWeight += weight;
+            }
+            float randomValue = Random.value * totalWeight;
+            for (int i = 0; i < weights.Count; i++) {
+                if (randomValue < weights[i])
+                    return i;
+                randomValue -= weights[i];
+            }
+            return Random.Range(0, weights.Count - 1);
+        }
+
+        private IEnumerator SpawnWave() {
+            foreach (var enemy in waveEnemies) {
+                SpawnEnemy(enemy);
+                yield return new WaitForSeconds(Random.Range(3f, 10f));
             }
         }
 
-        private IEnumerator SpawnWave(Wave wave) {
-            for (int i = 0; i < wave.EnemyCount; i++) {
-                SpawnEnemy(wave.EnemyPrefab);
-                EnemiesRemaining++;
-                yield return new WaitForSeconds(wave.SpawnInterval);
-            }
-
-            isSpawning = false;
+        private void SpawnEnemy(int enemyIndex) {
+            var enemyGameObject = Instantiate(EnemyPrefabs[enemyIndex], GetRandomSpawnPoint(), Quaternion.identity);
+            var enemy = enemyGameObject.GetComponent<Enemy>();
+            enemy.ExperienceValue = EnemyExperience[enemyIndex];
+            enemy.SetTargets(enemyGameObject.GetType().Name == "Titan", player, cabin, target);
         }
 
-        private void SpawnEnemy(GameObject enemyPrefab) {
-            if (SpawnPoints.Length == 0) {
-                Debug.LogError("No spawn points assigned in WaveManager.");
-                return;
-            }
-
-            Transform spawnPoint = SpawnPoints[Random.Range(0, SpawnPoints.Length)];
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Vector3 GetRandomSpawnPoint()
+        {
+            float randomAngle = Random.Range(0f, Mathf.PI * 2);
+            float randomDistance = Random.Range(MinSpawnDistance, MaxSpawnDistance);
+            return new Vector3(Mathf.Cos(randomAngle) * randomDistance, 0f, Mathf.Sin(randomAngle) * randomDistance);
         }
 
         public void OnEnemyDestroyed() {
-            EnemiesRemaining--;
-            if (EnemiesRemaining <= 0 && currentWaveIndex >= Waves.Length - 1) {
-                SiegeManager.Instance.Victory();
+            enemyDeathCount++;
+            if (enemyDeathCount >= waveEnemies.Count) {
+                SiegeManager.Instance.Victory(); //TODO: next wave
             }
         }
-
-        private void StartNextWave() {
-            currentWaveIndex++;
-            if (currentWaveIndex < Waves.Length) {
-                StartCoroutine(SpawnWave(Waves[currentWaveIndex]));
-                isSpawning = true;
-            }
-            else {
-                SiegeManager.Instance.Victory();
-            }
+        
+        void OnValidate()
+        {
+            if (EnemyPrefabs.Length != EnemyExperience.Length)
+                Array.Resize(ref EnemyExperience, EnemyPrefabs.Length);
         }
     }
 }

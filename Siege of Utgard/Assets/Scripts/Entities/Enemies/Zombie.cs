@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using Game;
 
@@ -5,21 +6,21 @@ namespace Entities.Enemies {
     public class Zombie : Enemy {
         private static readonly int Attack = Animator.StringToHash("Attack");
         private bool chasingPlayer = false; // Track whether the enemy is chasing the player
+        
         private void Update() {
             // Check if the player is within detection range
-            float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
+            var distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
 
             if (distanceToPlayer <= DetectionRange) {
                 // If the player is in range and the enemy is not already chasing them
                 if (!chasingPlayer) {
                     chasingPlayer = true;
                     SetDestination(playerTarget); // Start chasing the player
-                    Debug.LogWarning("Start chasing player");
                 }
 
                 // If the player is within attack range, attack
-                if (distanceToPlayer <= attackRange && canAttack)
-                {
+                if (distanceToPlayer <= attackRange && canAttack) {
+                    isAttacking = true;
                     PerformAttack();
                     StartCoroutine(AttackCoroutine());
                 }
@@ -36,6 +37,16 @@ namespace Entities.Enemies {
                 }
                 if (castleTarget) {
                     agent.SetDestination(castleTarget.position);
+                    
+                    var distanceToCabin = Vector3.Distance(transform.position, castleTarget.position);
+                    if (distanceToCabin <= DetectionRange && canAttack) {
+                        isAttacking = true;
+                        PerformAttack();
+                        StartCoroutine(AttackCoroutine());
+                    }
+                    else {
+                        ResumeMovement();
+                    }
                 }
             }
         }
@@ -47,7 +58,10 @@ namespace Entities.Enemies {
             Defender.Instance.TakeDamage(AttackPower);
             string target = chasingPlayer ? "player" : "cabin";
             Debug.Log($"{gameObject.name} attacks the {target} for {AttackPower} damage!");
-            Defender.Instance.TakeDamage(AttackPower);
+            if (chasingPlayer)
+                Defender.Instance.TakeDamage(AttackPower);
+            else
+                Castle.Instance.TakeDamage(AttackPower);
         }
     }
 }
