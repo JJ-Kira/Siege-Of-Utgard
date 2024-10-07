@@ -41,7 +41,7 @@ namespace Game {
             base.TakeDamage(amount);
         }
 
-        public void DealDamage(float amount, Enemy target) {
+        public void DealDamage(float amount, Entity target) {
             var damage = amount * damageDone;
             target.TakeDamage(damage);
         }
