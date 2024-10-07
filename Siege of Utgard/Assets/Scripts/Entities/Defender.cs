@@ -1,5 +1,6 @@
 using System;
 using Entities.Enemies;
+using TMPro;
 using UnityEngine;
 
 namespace Game {
@@ -19,6 +20,10 @@ namespace Game {
         
         //debuffs
         private float damageTaken = 1f;
+
+        [Header("UI")]
+        [SerializeField] private TextMeshProUGUI resultText;
+        [SerializeField] private Canvas menu;
 
         private void Awake() {
             if (Instance == null) {
@@ -48,7 +53,18 @@ namespace Game {
         
         protected override void Die() {
             base.Die();
-            //TODO: game over
+            resultText.text = "You died";
+            menu.gameObject.SetActive(true);
+        }
+
+        public void CastleFell() {
+            Die();
+        }
+
+        public void AnnounceVictory()
+        {
+            menu.gameObject.SetActive(true);
+            resultText.text = $"VICTORY\nExperience gained: {currentExperience}";
         }
         
         #region Experience

@@ -125,7 +125,7 @@ namespace Game {
         public void OnEnemyDestroyed() {
             enemyDeathCount++;
             if (enemyDeathCount >= waveEnemies.Count) {
-                SiegeManager.Instance.Victory(); //TODO: next wave
+                SiegeManager.Instance.Victory();
             }
         }
         

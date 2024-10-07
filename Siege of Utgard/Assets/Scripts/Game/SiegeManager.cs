@@ -27,16 +27,12 @@ namespace Game {
             }
         }
 
-        public void GameOver()
-        {
-            // Handle game over logic (e.g., display UI, stop wave spawning)
-            Debug.Log("Game Over!");
-        }
-
         public void Victory()
         {
             // Handle victory logic (e.g., display UI, stop wave spawning)
             Debug.Log("You Win!");
+            Defender.Instance.AnnounceVictory();
+            //TODO: next wave & buff shops from experience point
         }
 
         void OnValidate()

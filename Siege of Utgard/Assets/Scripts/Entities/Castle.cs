@@ -1,3 +1,5 @@
+using Game;
+
 namespace Entities {
     public class Castle : Entity {
         public static Castle Instance { get; private set; }
@@ -6,7 +8,7 @@ namespace Entities {
         private void Awake() {
             if (Instance == null) {
                 Instance = this;
-                DontDestroyOnLoad(gameObject); // Persist across scenes if necessary
+                //DontDestroyOnLoad(gameObject); // Persist across scenes if necessary
             }
             else {
                 Destroy(gameObject);
@@ -21,7 +23,7 @@ namespace Entities {
         protected override void Die()
         {
             base.Die();
-            //TODO: game over
+            Defender.Instance.CastleFell();
         }
 
         #region Buffs
