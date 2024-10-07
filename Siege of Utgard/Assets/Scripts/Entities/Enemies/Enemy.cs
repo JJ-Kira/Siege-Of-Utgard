@@ -9,7 +9,7 @@ namespace Entities.Enemies {
         private static readonly int Death = Animator.StringToHash("Die");
 
         [Header("Enemy Stats")] 
-        protected float AttackCooldown = 2f;
+        public float AttackCooldown = 2f;
         public float AttackPower = 10;
         public float ExperienceValue;
 
@@ -18,7 +18,7 @@ namespace Entities.Enemies {
         protected float attackRange; // Range within which enemies attack the player
         
         protected NavMeshAgent agent;
-        protected Transform castleTarget, playerTarget, door;
+        protected Transform playerTarget, castleTarget, cabinCenter;
 
         protected Animator animator;
         protected bool canAttack = true;
@@ -28,7 +28,7 @@ namespace Entities.Enemies {
             agent = GetComponent<NavMeshAgent>();
             animator = GetComponent<Animator>();
 
-            attackRange = agent.stoppingDistance;
+            attackRange = agent.stoppingDistance + 0.1f;
         }
 
         protected override void Die() {
@@ -44,11 +44,10 @@ namespace Entities.Enemies {
 
         // Method to set the target dynamically when instantiating the enemy
 
-        public void SetTargets(bool stormCastle, Transform defender, Transform castle, Transform door) {
+        public void SetTargets(Transform defender, Transform castle, Transform cabinCenter) {
             playerTarget = defender;
             castleTarget = castle;
-            this.door = door;
-            //SetDestination(stormCastle ? castleTarget : playerTarget);
+            this.cabinCenter = cabinCenter;
         }
 
         protected void SetDestination(Transform newTarget) {
@@ -66,6 +65,7 @@ namespace Entities.Enemies {
             if (isAttacking)
             {
                 isAttacking = false;
+                canAttack = true;
                 StopAllCoroutines();
             }
         }
@@ -82,7 +82,7 @@ namespace Entities.Enemies {
             yield return new WaitForSeconds(AttackCooldown);  // Wait for the cooldown duration
 
             // Resume movement after cooldown
-            agent.isStopped = false; // Resume movement
+            //agent.isStopped = false; // Resume movement
             canAttack = true;        // Allow attacking again
         }
     }

@@ -1,30 +1,32 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Enemies.Control {
+namespace Entities.Enemies.Control {
+    [DisallowMultipleComponent]
     [RequireComponent(typeof(NavMeshAgent), typeof(Animator))]
     public class EnemyMovement : MonoBehaviour {
         private static readonly int Move = Animator.StringToHash("Move");
-        private static readonly int Velocity = Animator.StringToHash("Velocity");
-        private NavMeshAgent agent;
-        private Animator animator;
+        private static readonly int Velocity1 = Animator.StringToHash("Velocity");
+    
+        private NavMeshAgent Agent;
+        private Animator Animator;
 
-        private Vector2 velocity;
-        private Vector2 smoothDeltaPosition;
+        private Vector2 Velocity;
+        private Vector2 SmoothDeltaPosition;
 
         private void Awake() {
-            agent = GetComponent<NavMeshAgent>();
-            animator = GetComponent<Animator>();
-            animator.applyRootMotion = true;
-            agent.updatePosition = false;
-            agent.updateRotation = true;
+            Agent = GetComponent<NavMeshAgent>();
+            Animator = GetComponent<Animator>();
+            Animator.applyRootMotion = true;
+            Agent.updatePosition = false;
+            Agent.updateRotation = true;
         }
-
+    
         private void OnAnimatorMove() {
-            Vector3 rootPosition = animator.rootPosition;
-            rootPosition.y = agent.nextPosition.y;
+            Vector3 rootPosition = Animator.rootPosition;
+            rootPosition.y = Agent.nextPosition.y;
             transform.position = rootPosition;
-            agent.nextPosition = rootPosition;
+            Agent.nextPosition = rootPosition;
         }
 
         private void Update() {
@@ -32,7 +34,7 @@ namespace Enemies.Control {
         }
 
         private void SynchronizeAnimatorAndAgent() {
-            Vector3 worldDeltaPosition = agent.nextPosition - transform.position;
+            Vector3 worldDeltaPosition = Agent.nextPosition - transform.position;
             worldDeltaPosition.y = 0;
             // Map 'worldDeltaPosition' to local space
             float dx = Vector3.Dot(transform.right, worldDeltaPosition);
@@ -41,28 +43,25 @@ namespace Enemies.Control {
 
             // Low-pass filter the deltaMove
             float smooth = Mathf.Min(1, Time.deltaTime / 0.1f);
-            smoothDeltaPosition = Vector2.Lerp(smoothDeltaPosition, deltaPosition, smooth);
+            SmoothDeltaPosition = Vector2.Lerp(SmoothDeltaPosition, deltaPosition, smooth);
 
-            velocity = smoothDeltaPosition / Time.deltaTime;
-            if (agent.remainingDistance <= agent.stoppingDistance)
-            {
-                velocity = Vector2.Lerp(Vector2.zero, velocity, agent.remainingDistance);
+            Velocity = SmoothDeltaPosition / Time.deltaTime;
+            if (Agent.remainingDistance <= Agent.stoppingDistance) {
+                Velocity = Vector2.Lerp(Vector2.zero, Velocity, Agent.remainingDistance);
             }
 
-            bool shouldMove = velocity.magnitude > 0.3f && agent.remainingDistance > agent.stoppingDistance;
+            bool shouldMove = Velocity.magnitude > 0.01f && Agent.remainingDistance > Agent.stoppingDistance && !Agent.isStopped;
 
-            animator.SetBool(Move, shouldMove);
-            animator.SetFloat(Velocity, velocity.magnitude);
+            Animator.SetBool(Move, shouldMove);
+            Animator.SetFloat(Velocity1, Velocity.magnitude);
 
-            float deltaMagnitude = worldDeltaPosition.magnitude;
-            if (deltaMagnitude > agent.radius / 2) {
-                transform.position = Vector3.Lerp(animator.rootPosition, agent.nextPosition, smooth);
-            }
-        }
+            transform.LookAt(Agent.steeringTarget + transform.forward);
 
-        public void StopMoving() {
-            agent.isStopped = true;
-            StopAllCoroutines();
+            //float deltaMagnitude = worldDeltaPosition.magnitude;
+            //if (deltaMagnitude > Agent.radius / 2)
+            //{
+            //    transform.position = Vector3.Lerp(Animator.rootPosition, Agent.nextPosition, smooth);
+            //}
         }
     }
 }

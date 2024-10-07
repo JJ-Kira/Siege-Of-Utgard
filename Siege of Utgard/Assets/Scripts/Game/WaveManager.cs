@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using Entities.Enemies;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Game {
@@ -13,13 +13,12 @@ namespace Game {
     public class WaveManager : MonoBehaviour
     {
         [Header("Targets")] 
-        [SerializeField] private Transform player;
-        [SerializeField] private Transform cabin;
-        [SerializeField] private Transform target;
+        [SerializeField] private Transform player, cabinCenter, center;
+        [SerializeField] private Transform[] cabin;
 
         [Header("Spawning")] 
-        public float MaxSpawnDistance;
         public float MinSpawnDistance;
+        public float MaxSpawnDistance;
         public GameObject[] EnemyPrefabs;
         public float[] EnemyExperience;
         
@@ -87,14 +86,40 @@ namespace Game {
             var enemyGameObject = Instantiate(EnemyPrefabs[enemyIndex], GetRandomSpawnPoint(), Quaternion.identity);
             var enemy = enemyGameObject.GetComponent<Enemy>();
             enemy.ExperienceValue = EnemyExperience[enemyIndex];
-            enemy.SetTargets(enemyGameObject.GetType().Name == "Titan", player, cabin, target);
+            enemy.SetTargets(player, GetClosestTarget(enemy.transform.position), cabinCenter);
+            var agent = enemy.GetComponent<NavMeshAgent>();
+            agent.avoidancePriority = Random.Range(1, 99);
+            agent.stoppingDistance = Random.Range(0.5f, 1.0f);
+        }
+        
+        public Transform GetClosestTarget(Vector3 currentPosition)
+        {
+            Transform closestTarget = null;
+            float closestDistanceSqr = Mathf.Infinity; // Start with the highest possible distance
+
+            foreach (Transform target in cabin)
+            {
+                Vector3 directionToTarget = target.position - currentPosition;
+                float distanceSqr = directionToTarget.sqrMagnitude; // Use squared distance for performance
+
+                if (distanceSqr < closestDistanceSqr)
+                {
+                    closestDistanceSqr = distanceSqr;
+                    closestTarget = target;
+                }
+            }
+
+            return closestTarget;
         }
 
         Vector3 GetRandomSpawnPoint()
         {
             float randomAngle = Random.Range(0f, Mathf.PI * 2);
             float randomDistance = Random.Range(MinSpawnDistance, MaxSpawnDistance);
-            return new Vector3(Mathf.Cos(randomAngle) * randomDistance, 0f, Mathf.Sin(randomAngle) * randomDistance);
+            var offset = new Vector3(Mathf.Cos(randomAngle) * randomDistance, 0.726f,
+                Mathf.Sin(randomAngle) * randomDistance);
+            var spawnPoint = center.position + offset;
+            return spawnPoint;
         }
 
         public void OnEnemyDestroyed() {
