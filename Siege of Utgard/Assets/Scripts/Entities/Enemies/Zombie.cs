@@ -7,8 +7,15 @@ namespace Entities.Enemies {
         
         private bool chasingPlayer = false; // Track whether the enemy is chasing the player
         private bool stormingCastle = false;
+
+        private void Start()
+        {
+            base.Start();
+            StartCoroutine(MoveTowardsTarget(playerTarget.position));
+        }
         
         private void Update() {
+            if (isDying) return;
             // Check if the player is within detection range
             var distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
             var distanceToCabin = Vector3.Distance(transform.position, castleTarget.position);
@@ -24,7 +31,8 @@ namespace Entities.Enemies {
                 // If the player is in range and the enemy is not already chasing them
                 if (!chasingPlayer) {
                     chasingPlayer = true;
-                    SetDestination(playerTarget); // Start chasing the player
+                    StopAllCoroutines();
+                    StartCoroutine(MoveTowardsTarget(playerTarget.position));
                 }
 
                 // If the player is within attack range, attack
@@ -32,8 +40,8 @@ namespace Entities.Enemies {
                     transform.rotation = Quaternion.LookRotation(new Vector3(playerTarget.transform.position.x, transform.position.y, 
                         playerTarget.transform.position.z) - transform.position, Vector3.up);
                     isAttacking = true;
+                    StopAllCoroutines();
                     PerformAttack();
-                    StartCoroutine(AttackCoroutine());
                 }
                 else if (distanceToPlayer > attackRange) {
                     ResumeMovement();
@@ -43,14 +51,13 @@ namespace Entities.Enemies {
                 // If the player is out of range and the enemy was chasing them, return to the castle
                 if (chasingPlayer) {
                     ResumeMovement();
-                    chasingPlayer = false;
+                    StopAllCoroutines();
+                    StartCoroutine(MoveTowardsTarget(playerTarget.position));
                 }
-                if (castleTarget) 
-                    agent.SetDestination(castleTarget.position);
                 if (distanceToCabin <= attackRange) {
                     stormingCastle = true;
                     agent.isStopped = true;
-                    //transform.LookAt(door);
+                    StopAllCoroutines();
                 }
             }
         }

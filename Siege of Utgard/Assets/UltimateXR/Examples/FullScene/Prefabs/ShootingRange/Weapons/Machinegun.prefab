@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 2251914811362569989}
   - component: {fileID: 2252304390424968867}
   - component: {fileID: 244220739104333787}
+  - component: {fileID: -765640055951902709}
   m_Layer: 0
   m_Name: Machinegun
   m_TagString: Untagged
@@ -439,7 +440,7 @@ MonoBehaviour:
   _rigidBodyDynamicOnRelease: 1
   _verticalReleaseMultiplier: 1
   _horizontalReleaseMultiplier: 1
-  _previewGrabPosesMode: 3
+  _previewGrabPosesMode: 1
   _previewPosesRegenerationType: 0
   _previewPosesRegenerationIndex: -1
   _selectedAvatarForGrips: {fileID: 6800616272644675311, guid: af480974a3e0c9a438abc245d0558ac5,
@@ -616,7 +617,7 @@ MonoBehaviour:
     _projectileImpactForceMultiplier: 1
     _collisionLayerMask:
       serializedVersion: 2
-      m_Bits: 1
+      m_Bits: 128
     _prefabInstantiateOnImpact: {fileID: 1022521639413414, guid: 83d69800434987942892ec7dd9f8dc18,
       type: 3}
     _prefabInstantiateOnImpactLife: 1
@@ -729,6 +730,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-765640055951902709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2221394708238033473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b09b7af8a142204193c334d161ecdb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  weapon: {fileID: 2252505135500819345}
 --- !u!1 &2222440079282595053
 GameObject:
   m_ObjectHideFlags: 0

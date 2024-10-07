@@ -256,8 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2fe113e51498a4da081c5033e0a60a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activationTrigger: 1
-  _explodeOnCollision: 0
+  _activationTrigger: 2
+  _explodeOnCollision: 1
   _timerSeconds: 3
   _pin: {fileID: 4949786597718911190}
   _audioRemovePin:
@@ -272,7 +272,7 @@ MonoBehaviour:
     _fallbackDurationSeconds: -1
   _impactExplosionCollisionMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2039
   _explosionPrefabPool:
   - {fileID: 1113872148690782, guid: 636a8a2b8b730bd4d858c5e264ad4dcd, type: 3}
   _explosionPrefabLife: 4
@@ -357,8 +357,7 @@ MonoBehaviour:
   _previewGrabPosesMode: 3
   _previewPosesRegenerationType: 0
   _previewPosesRegenerationIndex: -1
-  _selectedAvatarForGrips: {fileID: 9064259894265353843, guid: e7468ec6b7af89c4d94d451ec3c1807b,
-    type: 3}
+  _selectedAvatarForGrips: {fileID: 0}
   _firstGrabPointIsMain: 1
   _grabPoint:
     _editorFoldout: 1

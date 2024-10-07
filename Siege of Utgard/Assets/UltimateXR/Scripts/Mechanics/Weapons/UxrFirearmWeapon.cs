@@ -27,6 +27,8 @@ namespace UltimateXR.Mechanics.Weapons
     {
         #region Inspector Properties/Serialized Fields
 
+        [HideInInspector] public RaycastHit CurrentShotTarget;
+        
         [SerializeField] protected Transform               _recoilAxes;
         [SerializeField] private   List<UxrFirearmTrigger> _triggers;
 
@@ -565,6 +567,7 @@ namespace UltimateXR.Mechanics.Weapons
 
                 // TODO: here we probably should add some randomization depending on recoil using the additional optional parameters
                 _weaponSource.Shoot(trigger.ProjectileShotIndex);
+                CurrentShotTarget = _weaponSource.ShotRaycastDistance(trigger.ProjectileShotIndex);
 
                 trigger.RecoilTimer = trigger.RecoilDurationSeconds;
 

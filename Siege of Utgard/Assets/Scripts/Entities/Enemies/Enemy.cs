@@ -23,6 +23,7 @@ namespace Entities.Enemies {
         protected Animator animator;
         protected bool canAttack = true;
         protected bool isAttacking = false;
+        protected bool isDying = false;
         
         protected virtual void Awake() {
             agent = GetComponent<NavMeshAgent>();
@@ -31,14 +32,20 @@ namespace Entities.Enemies {
             attackRange = agent.stoppingDistance + 0.1f;
         }
 
+        private void Start()
+        {
+            base.Start();
+        }
+        
         protected override void Die() {
             base.Die();
+            isDying = true;
             Defender.Instance.GainExperience(ExperienceValue);
             WaveManager waveManager = FindObjectOfType<WaveManager>();
             if (waveManager) {
                 waveManager.OnEnemyDestroyed();
             }
-            animator.SetBool(Death, true);
+            animator.SetTrigger(Death);
             Destroy(gameObject, 5f);
         }
 
@@ -48,12 +55,6 @@ namespace Entities.Enemies {
             playerTarget = defender;
             castleTarget = castle;
             this.cabinCenter = cabinCenter;
-        }
-
-        protected void SetDestination(Transform newTarget) {
-            if (newTarget) {
-                agent.SetDestination(newTarget.position);
-            }
         }
 
         // Abstract method for enemy-specific behavior
@@ -66,10 +67,17 @@ namespace Entities.Enemies {
             {
                 isAttacking = false;
                 canAttack = true;
-                StopAllCoroutines();
+                StopCoroutine(AttackCoroutine());
             }
         }
-        
+
+        protected IEnumerator MoveTowardsTarget(Vector3 target)
+        {
+            agent.SetDestination(target);
+
+            yield return new WaitForSeconds(3);
+        }
+
         // Coroutine to handle attack logic with cooldown
         protected IEnumerator AttackCoroutine()
         {

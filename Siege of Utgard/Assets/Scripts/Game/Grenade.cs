@@ -235,6 +235,8 @@ namespace Game
         {
             if (e.IsOwnershipChanged && _activationTrigger == UxrGrenadeActivationMode.TriggerPin && !IsActivated)
             {
+                Debug.LogWarning("!!!");
+                _isActivated = true;
                 _timer = _timerSeconds;
 
                 Collider pinCollider = _pin.GetCachedComponent<Collider>();
@@ -261,6 +263,9 @@ namespace Game
         /// </summary>
         private void Explode()
         {
+            Debug.LogWarning("1");
+            if (!_isActivated) return; 
+            Debug.LogWarning("2");
             if (_exploded)
             {
                 return;
@@ -313,6 +318,7 @@ namespace Game
         private float _timer = -1.0f;
         private bool  _timerFrozen;
         private bool  _exploded;
+        private bool _isActivated = false;
 
         #endregion
     }

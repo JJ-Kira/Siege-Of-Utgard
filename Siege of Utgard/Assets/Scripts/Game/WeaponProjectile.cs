@@ -1,25 +1,25 @@
+using System;
 using Entities.Enemies;
+using UltimateXR.Mechanics.Weapons;
 using UnityEngine;
 
 namespace Game {
     public class WeaponProjectile : MonoBehaviour {
-        [SerializeField] private float lifetime = 3f; // Time before the projectile self-destructs
         [SerializeField] private int damage = 10;     // Amount of damage the projectile will deal to enemies
 
-        private void Start() {
-            Destroy(gameObject, lifetime);
+        [SerializeField] private UxrFirearmWeapon weapon;
+
+        private void Update()
+        {
+            if (weapon.CurrentShotTarget.collider != null)
+            {
+                Shoot(weapon.CurrentShotTarget.collider);
+            }
         }
 
-        private void OnTriggerEnter(Collider other) {
-            // Check if the object we collided with is an enemy
+        private void Shoot(Collider other) {
             Enemy enemy = other.GetComponent<Enemy>();
-            if (enemy != null) {
-                // Call TakeDamage on the enemy and pass the damage value
-                Defender.Instance.DealDamage(damage, enemy);
-
-                // Destroy the projectile after it hits the enemy
-                Destroy(gameObject);
-            }
+            Defender.Instance.DealDamage(damage, enemy);
         }
     }
 }

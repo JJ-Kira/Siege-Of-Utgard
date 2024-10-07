@@ -153,7 +153,7 @@ namespace UltimateXR.Mechanics.Weapons
         /// </summary>
         /// <param name="shotTypeIndex">Index in <see cref="ShotTypes" />, telling which shot type to use</param>
         /// <returns>Shot distance or a negative value telling the current target is out of range</returns>
-        public float ShotRaycastDistance(int shotTypeIndex)
+        public RaycastHit ShotRaycastDistance(int shotTypeIndex)
         {
             if (shotTypeIndex >= 0 && shotTypeIndex < _shotTypes.Count)
             {
@@ -164,11 +164,11 @@ namespace UltimateXR.Mechanics.Weapons
                                     _shotTypes[shotTypeIndex].CollisionLayerMask,
                                     QueryTriggerInteraction.Ignore))
                 {
-                    return raycastHit.distance;
+                    return raycastHit;
                 }
             }
 
-            return -1.0f;
+            return new RaycastHit();
         }
 
         /// <summary>
